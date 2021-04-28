@@ -8,8 +8,19 @@ function setup() {
 function draw() {
   let x = 10;
   fill(0);
-  for (let x = 10; x < width; x = x + 30) {
-    ellipse(x, height / 2, 10, 10);
+
+  
+  for (let x = 10; x < width; x = x + 60) {
+    for (let y = 10; y < height; y = y + 30) {
+    
+    fill(0);
+    rect(x+7.5, y, 5, 20);
+    rect(x, y+5, 20,5);
+   
+    fill(random(mouseX));
+    rect(x+35, y, 5, 25);
+    rect(x-32.5, y+15, 20,5);
+    }
   }
 }
 

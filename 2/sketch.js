@@ -1,3 +1,7 @@
+let x = 0;
+let y = 0;
+let spacing = 40;
+
 function setup() {
   let navWidth = document.getElementById("nav").offsetWidth;
   let canvas = createCanvas(windowWidth - navWidth, windowHeight);
@@ -5,12 +9,24 @@ function setup() {
   background(255);
 }
 
+  
 function draw() {
+  stroke (0);
   fill(0);
-  for (let x = 10; x < width; x = x + 30) {
-    ellipse(x, height / 2, 10, 10);
+  if (random(1)<0.5){
+    line(x, y, x+spacing, y+spacing);
+  }
+  else{
+    line(x, y+spacing, x+spacing, y);
+  }
+  
+  x= x + spacing;
+  if(x > width){
+    x = 0;
+    y = y+ spacing;
   }
 }
+
 
 function windowResized() {
   let navWidth = document.getElementById("nav").offsetWidth;
