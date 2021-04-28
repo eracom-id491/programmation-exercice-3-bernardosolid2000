@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+ul {
+  font-size: 2rem;
+  font-weight: 600;
+  list-style: none;
+  padding: 1rem;
+  text-align: center;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+a.active {
+  text-decoration: underline;
+}
+
+canvas {
+  margin-left: 60px;
+}
+
+#nav {
+  background: rgba(0, 0, 255, 1);
+  height: 100vh;
+  width: 60px;
+}
